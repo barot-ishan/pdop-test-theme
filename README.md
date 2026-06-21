@@ -69,4 +69,4 @@ Good luck!
 
 ## Git Workflow Test
 
-## Homepage Hero Feature Branch Test
+## Conflict Test A
