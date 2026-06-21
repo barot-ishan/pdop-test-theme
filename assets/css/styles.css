@@ -1,0 +1,298 @@
+body {
+  margin-bottom: 0 !important;
+}
+
+/* footer#colophon,
+.entry-content {
+  padding-inline: 5rem;
+} */
+
+/* Footer */
+/* footer#colophon {
+  box-shadow: 0 -6px 12px 0 rgba(0, 0, 0, 0.06);
+  padding-block: 10px;
+} */
+
+.entry-header {
+  min-height: 12.5rem;
+  text-align: center;
+  align-content: center;
+  background: linear-gradient(45deg, #fff6f5, #ffe7e4);
+  color: #000;
+}
+
+.gform-theme--api,
+.gform-theme--framework {
+  --gf-ctrl-outline-color-focus: #2b3c7399 !important;
+  --gf-ctrl-choice-check-color: #2b3c73 !important;
+  --gf-ctrl-select-dropdown-option-shadow-hover: inset 3px 0 0 #2b3c73 !important;
+  --gf-field-pg-steps-number-bg-color-complete: #2b3c73 !important;
+  --gf-field-pg-steps-number-border-color-complete: #2b3c73 !important;
+}
+
+:is(#gform_wrapper_2, #gform_wrapper_3) *:not(h1, h2, h4, h6, .gform-loader) {
+  font-size: 16px;
+}
+
+#gform_wrapper_2,
+#gform_wrapper_3 {
+  margin-inline: auto;
+  /* margin-top: 3rem; */
+  max-width: 1200px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  /* background-color: #e9ffe7; */
+  padding: 30px;
+  border-radius: 25px;
+}
+
+.gform_previous_button,
+.gform_save_link {
+  background-color: #e9ffe7 !important;
+  border-color: #50b447 !important;
+  border-radius: 25px !important;
+}
+
+.gchoice,
+.gsurvey-likert-choice {
+  cursor: pointer !important;
+}
+
+.gform_required_legend {
+  display: none;
+}
+
+#gform_submit_button_2,
+.gform_next_button,
+#gform_next_button_3_7,
+#gform_send_resume_link_button_3,
+input[type="submit"] {
+  background-color: #2b3c73 !important;
+  border-radius: 25px !important;
+}
+
+.gform-theme--framework .gf_progressbar .percentbar_blue {
+  background-color: #2b3c73 !important;
+}
+
+/* .gform-theme--framework
+  input[type]:where(:not(.gform-text-input-reset):not([type="hidden"])):where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ):focus,
+.gform-theme--framework
+  textarea:where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ):focus,
+.gform-theme.gform-theme--framework.gform_wrapper
+  :where(:not(.mce-splitbtn))
+  > button:not([id*="mceu_"]):not(.mce-open):where(
+    :not(.gform-theme-no-framework):not(.gform-theme__disable):not(
+        .gform-theme__disable *
+      ):not(.gform-theme__disable-framework):not(
+        .gform-theme__disable-framework *
+      )
+  ).gform-theme-button--secondary:focus,
+.gform-theme.gform-theme--framework.gform_wrapper
+  button.button:where(
+    :not(.gform-theme-no-framework):not(.gform-theme__disable):not(
+        .gform-theme__disable *
+      ):not(.gform-theme__disable-framework):not(
+        .gform-theme__disable-framework *
+      )
+  ).gform-theme-button--secondary:focus {
+  outline-color: #2b3c73 !important;
+} */
+
+/* .gfield_radio .gchoice .gfield-choice-input:before,
+.gsurvey-likert .gsurvey-likert-choice input:before {
+  background-color: #50b447 !important;
+} */
+
+/* .gform-theme.gform-theme--framework.gform_wrapper
+  input:is([type="submit"], [type="button"], [type="reset"]):where(
+    :not(.gform-theme-no-framework):not(.gform-theme__disable):not(
+        .gform-theme__disable *
+      ):not(.gform-theme__disable-framework):not(
+        .gform-theme__disable-framework *
+      )
+  ):focus,
+.gform-theme.gform-theme--framework.gform_wrapper
+  .button:where(
+    :not(.gform-theme-no-framework):not(.gform-theme__disable):not(
+        .gform-theme__disable *
+      ):not(.gform-theme__disable-framework):not(
+        .gform-theme__disable-framework *
+      )
+  ):focus,
+.gform-theme.gform-theme--framework.gform_wrapper
+  .gform-theme-button:where(
+    :not(.gform-theme-no-framework):not(.gform-theme__disable):not(
+        .gform-theme__disable *
+      ):not(.gform-theme__disable-framework):not(
+        .gform-theme__disable-framework *
+      )
+  ):focus,
+.gform-theme.gform-theme--framework.gform_wrapper
+  input:is([type="submit"], [type="button"], [type="reset"]).button:where(
+    :not(.gform-theme-no-framework):not(.gform-theme__disable):not(
+        .gform-theme__disable *
+      ):not(.gform-theme__disable-framework):not(
+        .gform-theme__disable-framework *
+      )
+  ):focus,
+.gform-theme.gform-theme--framework.gform_wrapper
+  input:is([type="submit"], [type="button"], [type="reset"]):where(
+    :not(.gform-theme-no-framework):not(.gform-theme__disable):not(
+        .gform-theme__disable *
+      ):not(.gform-theme__disable-framework):not(
+        .gform-theme__disable-framework *
+      )
+  ):focus {
+  outline-color: #2b3c73 !important;
+} */
+
+.gform_ajax_spinner_3 {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.gfield--type-section {
+  border: 0 !important;
+  background-color: #aabeff3b !important;
+  border-radius: 4px !important;
+  padding-block: 6px !important;
+  text-align: center !important;
+  margin-top: 30px !important;
+}
+
+.gfield--type-section .gsection_title {
+  margin: 0;
+  color: #2b3c73;
+  letter-spacing: 0.5px;
+}
+
+.gfield--type-html {
+  background-color: #2b3c73 !important;
+  padding: 20px 30px !important;
+  border-radius: 4px !important;
+  border: solid 1px #2b3c73 !important;
+  color: white !important;
+}
+
+.search-choice {
+  background-color: #2b3c73 !important;
+}
+
+.gf_page_steps {
+  justify-content: center !important;
+  margin-bottom: 4rem !important;
+}
+
+.gf_step_active {
+  background-color: #aabeff3b !important;
+  border-radius: 8px !important;
+  padding: 7px 10px !important;
+}
+
+.gf_step_number {
+  background-color: #2b3c73 !important;
+  color: white !important;
+}
+
+.gf_step_label {
+  color: #2b3c73 !important;
+}
+
+.gform-theme--framework .gf_step_completed .gf_step_number::after {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+.facility-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.facility-card {
+  border-radius: 12px;
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.short-name {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.detail {
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+.updated {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.facility-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.facility-filters button {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.facility-filters button.active {
+  background: #2b3c73;
+  color: #fff;
+}
+
+/* Status colors */
+.facility-card.open .status-badge {
+  color: #16a34a;
+  background-color: #16a34a21;
+}
+
+.facility-card.closed .status-badge {
+  color: #dc2626;
+  background-color: #dc262621;
+}
+
+.facility-card.cancelled .status-badge {
+  color: #374151;
+}
+
+.facility-card.go .status-badge {
+  color: #16a34a;
+  background-color: #16a34a21;
+}
+
+/* ⚪ yellow */
+.facility-card.info .status-badge {
+  color: #facc15;
+  background-color: #facc1521;
+}

@@ -1,0 +1,1149 @@
+{
+    "key": "group_pdop_about_page_v1",
+    "title": "About Us",
+    "fields": [
+        {
+            "key": "field_pdop_about_sections",
+            "label": "Page Sections",
+            "name": "about_page_sections",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "Add, reorder, or remove page sections. Each layout maps to a template part.",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "button_label": "Add Section",
+            "min": 0,
+            "max": 0,
+            "layouts": {
+                "community_intro": {
+                    "key": "layout_pdop_community_intro",
+                    "name": "community_intro",
+                    "label": "🏡 Community Intro (Heading + Badges + Text\/Image)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_pdop_ci_heading",
+                            "label": "Section Heading",
+                            "name": "heading",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Main section heading — displayed in large uppercase.",
+                            "required": 1,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placeholder": "e.g. YOUR COMMUNITY. YOUR PARKS.",
+                            "default_value": "",
+                            "maxlength": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_pdop_ci_bg_color",
+                            "label": "Background Colour",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "Section background. Leave default for lavender.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#ede9f6",
+                            "enable_opacity": false,
+                            "custom_palette_source": "",
+                            "palette_colors": "",
+                            "show_color_wheel": true,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_pdop_ci_badges",
+                            "label": "Accreditation Badges",
+                            "name": "badges",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "Upload award\/accreditation logos shown in a centred row.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "min": 0,
+                            "max": 8,
+                            "layout": "block",
+                            "button_label": "Add Badge",
+                            "rows_per_page": 20,
+                            "collapsed": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_pdop_ci_badge_image",
+                                    "label": "Badge Image",
+                                    "name": "badge_image",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "100",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": 0,
+                                    "min_height": 0,
+                                    "min_size": 0,
+                                    "max_width": 0,
+                                    "max_height": 0,
+                                    "max_size": 0,
+                                    "mime_types": "",
+                                    "parent_repeater": "field_pdop_ci_badges"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_pdop_ci_content",
+                            "label": "Text Content",
+                            "name": "content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Left-column body text. Supports bold, lists, links.",
+                            "required": 1,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "default_value": "",
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_pdop_ci_side_image",
+                            "label": "Side Image",
+                            "name": "side_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Right-column image. Recommend min 800×600 px.",
+                            "required": 1,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": 0,
+                            "min_height": 0,
+                            "min_size": 0,
+                            "max_width": 0,
+                            "max_height": 0,
+                            "max_size": 0,
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "feature_cards_grid": {
+                    "key": "layout_pdop_feature_cards_grid",
+                    "name": "feature_cards_grid",
+                    "label": "🃏 Feature Cards Grid (4-column)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_pdop_fc_heading",
+                            "label": "Section Heading",
+                            "name": "heading",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Centred heading above the grid. Supports line breaks.",
+                            "required": 1,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "rows": 3,
+                            "default_value": "",
+                            "new_lines": "",
+                            "maxlength": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_pdop_fc_cards",
+                            "label": "Cards",
+                            "name": "cards",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "min": 1,
+                            "max": 20,
+                            "layout": "block",
+                            "button_label": "Add Card",
+                            "rows_per_page": 20,
+                            "collapsed": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_pdop_fc_card_title",
+                                    "label": "Card Title",
+                                    "name": "title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placeholder": "e.g. Parks",
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_pdop_fc_cards"
+                                },
+                                {
+                                    "key": "field_pdop_fc_card_type",
+                                    "label": "Card Type",
+                                    "name": "card_type",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "\"Image card\" shows a photo. \"Text + CTA\" shows a coloured content box with a button.",
+                                    "required": 1,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "image": "🖼 Image card",
+                                        "text_cta": "📝 Text + CTA card (yellow-green)"
+                                    },
+                                    "default_value": "image",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value",
+                                    "create_options": 0,
+                                    "save_options": 0,
+                                    "parent_repeater": "field_pdop_fc_cards"
+                                },
+                                {
+                                    "key": "field_pdop_fc_card_image",
+                                    "label": "Card Image",
+                                    "name": "image",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "Required for \"Image card\" type. Recommend 4:3 ratio.",
+                                    "required": false,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_pdop_fc_card_type",
+                                                "operator": "==",
+                                                "value": "image"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "100",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": 0,
+                                    "min_height": 0,
+                                    "min_size": 0,
+                                    "max_width": 0,
+                                    "max_height": 0,
+                                    "max_size": 0,
+                                    "mime_types": "",
+                                    "parent_repeater": "field_pdop_fc_cards"
+                                },
+                                {
+                                    "key": "field_pdop_fc_card_text",
+                                    "label": "Card Text",
+                                    "name": "card_text",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "Body text shown in the yellow-green CTA card.",
+                                    "required": false,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_pdop_fc_card_type",
+                                                "operator": "==",
+                                                "value": "text_cta"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "100",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "rows": 3,
+                                    "default_value": "",
+                                    "new_lines": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "parent_repeater": "field_pdop_fc_cards"
+                                },
+                                {
+                                    "key": "field_pdop_fc_card_cta_label",
+                                    "label": "Button Label",
+                                    "name": "cta_label",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_pdop_fc_card_type",
+                                                "operator": "==",
+                                                "value": "text_cta"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placeholder": "e.g. Explore",
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_pdop_fc_cards"
+                                },
+                                {
+                                    "key": "field_pdop_fc_card_cta_url",
+                                    "label": "Button URL",
+                                    "name": "cta_url",
+                                    "aria-label": "",
+                                    "type": "url",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_pdop_fc_card_type",
+                                                "operator": "==",
+                                                "value": "text_cta"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placeholder": "https:\/\/",
+                                    "default_value": "",
+                                    "parent_repeater": "field_pdop_fc_cards"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "get_involved": {
+                    "key": "layout_pdop_get_involved",
+                    "name": "get_involved",
+                    "label": "🤝 Get Involved (Dark navy — photo collage + numbered steps)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_pdop_gi_heading",
+                            "label": "Section Heading",
+                            "name": "heading",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "READY TO GET INVOLVED?",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_pdop_gi_photos",
+                            "label": "Photo Collage",
+                            "name": "photo_collage",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "Up to 7 community photos displayed in a staggered row. Decorative — alt text not required.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "min": 0,
+                            "max": 7,
+                            "layout": "block",
+                            "button_label": "Add Photo",
+                            "rows_per_page": 20,
+                            "collapsed": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_pdop_gi_photo",
+                                    "label": "Photo",
+                                    "name": "photo",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "100",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": 0,
+                                    "min_height": 0,
+                                    "min_size": 0,
+                                    "max_width": 0,
+                                    "max_height": 0,
+                                    "max_size": 0,
+                                    "mime_types": "",
+                                    "parent_repeater": "field_pdop_gi_photos"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_pdop_gi_steps",
+                            "label": "Steps",
+                            "name": "steps",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "Steps are displayed 2 per row. Content type is determined by which right-column field you fill in.",
+                            "required": 1,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "min": 1,
+                            "max": 8,
+                            "layout": "block",
+                            "button_label": "Add Step",
+                            "rows_per_page": 20,
+                            "collapsed": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_pdop_gi_step_number",
+                                    "label": "Step Number",
+                                    "name": "step_number",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "10",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placeholder": 1,
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_pdop_gi_steps"
+                                },
+                                {
+                                    "key": "field_pdop_gi_step_title",
+                                    "label": "Step Title",
+                                    "name": "step_title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "60",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placeholder": "BROWSE OUR PROGRAM GUIDE",
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_pdop_gi_steps"
+                                },
+                                {
+                                    "key": "field_pdop_gi_step_cta_label",
+                                    "label": "Step Button Label",
+                                    "name": "step_cta_label",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placeholder": "e.g. Get Program Guide",
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_pdop_gi_steps"
+                                },
+                                {
+                                    "key": "field_pdop_gi_step_desc",
+                                    "label": "Step Description",
+                                    "name": "step_description",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "70",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "tabs": "all",
+                                    "toolbar": "basic",
+                                    "media_upload": 0,
+                                    "default_value": "",
+                                    "delay": 0,
+                                    "parent_repeater": "field_pdop_gi_steps"
+                                },
+                                {
+                                    "key": "field_pdop_gi_step_cta_url",
+                                    "label": "Step Button URL",
+                                    "name": "step_cta_url",
+                                    "aria-label": "",
+                                    "type": "url",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placeholder": "https:\/\/",
+                                    "default_value": "",
+                                    "parent_repeater": "field_pdop_gi_steps"
+                                },
+                                {
+                                    "key": "field_pdop_gi_step_image",
+                                    "label": "📸 Right Content: Image",
+                                    "name": "step_image",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "Fill this for an image on the right (e.g. program guide cover). Leave blank if using a form or info cards instead.",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "33",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": 0,
+                                    "min_height": 0,
+                                    "min_size": 0,
+                                    "max_width": 0,
+                                    "max_height": 0,
+                                    "max_size": 0,
+                                    "mime_types": "",
+                                    "parent_repeater": "field_pdop_gi_steps"
+                                },
+                                {
+                                    "key": "field_pdop_gi_step_form",
+                                    "label": "📋 Right Content: Form Shortcode",
+                                    "name": "step_form_shortcode",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "Paste a form plugin shortcode (CF7, Gravity Forms, etc.) to embed a form on the right. Leave blank if using image or info cards.",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "33",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placeholder": "[contact-form-7 id=\"123\"]",
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_pdop_gi_steps"
+                                },
+                                {
+                                    "key": "field_pdop_gi_step_info_cards",
+                                    "label": "🗂 Right Content: Info Cards",
+                                    "name": "step_info_cards",
+                                    "aria-label": "",
+                                    "type": "repeater",
+                                    "instructions": "Add white info cards on the right (e.g. Registration steps, Scholarship info). Leave empty if using image or form.",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "34",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "min": 0,
+                                    "max": 4,
+                                    "layout": "block",
+                                    "button_label": "Add Info Card",
+                                    "rows_per_page": 20,
+                                    "collapsed": "",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_pdop_gi_ic_title",
+                                            "label": "Card Title",
+                                            "name": "card_title",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": false,
+                                            "wrapper": {
+                                                "width": "100",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_pdop_gi_step_info_cards"
+                                        },
+                                        {
+                                            "key": "field_pdop_gi_ic_content",
+                                            "label": "Card Content",
+                                            "name": "card_content",
+                                            "aria-label": "",
+                                            "type": "wysiwyg",
+                                            "instructions": "Supports bold, bullet lists, and links. Use lists for registration timelines.",
+                                            "required": false,
+                                            "conditional_logic": false,
+                                            "wrapper": {
+                                                "width": "100",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "tabs": "all",
+                                            "toolbar": "basic",
+                                            "media_upload": 0,
+                                            "default_value": "",
+                                            "delay": 0,
+                                            "parent_repeater": "field_pdop_gi_step_info_cards"
+                                        },
+                                        {
+                                            "key": "field_pdop_gi_ic_cta_label",
+                                            "label": "Card Button Label",
+                                            "name": "card_cta_label",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": false,
+                                            "conditional_logic": false,
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "placeholder": "e.g. Create Account",
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_pdop_gi_step_info_cards"
+                                        },
+                                        {
+                                            "key": "field_pdop_gi_ic_cta_url",
+                                            "label": "Card Button URL",
+                                            "name": "card_cta_url",
+                                            "aria-label": "",
+                                            "type": "url",
+                                            "instructions": "",
+                                            "required": false,
+                                            "conditional_logic": false,
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "placeholder": "https:\/\/",
+                                            "default_value": "",
+                                            "parent_repeater": "field_pdop_gi_step_info_cards"
+                                        }
+                                    ],
+                                    "parent_repeater": "field_pdop_gi_steps"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "video_section": {
+                    "key": "layout_pdop_video_section",
+                    "name": "video_section",
+                    "label": "▶ Video Section (YouTube embed)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_pdop_vs_heading",
+                            "label": "Section Heading",
+                            "name": "heading",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "70",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_pdop_vs_bg_color",
+                            "label": "Background Colour",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#ede9f6",
+                            "enable_opacity": false,
+                            "custom_palette_source": "",
+                            "palette_colors": "",
+                            "show_color_wheel": true,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_pdop_vs_description",
+                            "label": "Description",
+                            "name": "description",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Short paragraph shown between the heading and the video.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "70",
+                                "class": "",
+                                "id": ""
+                            },
+                            "rows": 3,
+                            "default_value": "",
+                            "new_lines": "",
+                            "maxlength": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_pdop_vs_video_url",
+                            "label": "YouTube Video URL",
+                            "name": "video_url",
+                            "aria-label": "",
+                            "type": "url",
+                            "instructions": "Full YouTube watch URL (youtube.com\/watch?v=…) or short youtu.be\/… URL.",
+                            "required": 1,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "70",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placeholder": "https:\/\/www.youtube.com\/watch?v=VIDEO_ID",
+                            "default_value": ""
+                        },
+                        {
+                            "key": "field_pdop_vs_thumbnail",
+                            "label": "Video Thumbnail (optional override)",
+                            "name": "video_thumbnail",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "If blank, the YouTube auto-thumbnail is used. Provide a custom thumbnail for better quality or privacy.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": 0,
+                            "min_height": 0,
+                            "min_size": 0,
+                            "max_width": 0,
+                            "max_height": 0,
+                            "max_size": 0,
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "icon_cards": {
+                    "key": "layout_pdop_icon_cards",
+                    "name": "icon_cards",
+                    "label": "🔲 Icon Cards Row (\"Explore More\")",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_pdop_ic_heading",
+                            "label": "Section Heading",
+                            "name": "heading",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "70",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placeholder": "EXPLORE MORE ABOUT THE PARK DISTRICT",
+                            "default_value": "",
+                            "maxlength": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_pdop_ic_bg_color",
+                            "label": "Background Colour",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#ede9f6",
+                            "enable_opacity": false,
+                            "custom_palette_source": "",
+                            "palette_colors": "",
+                            "show_color_wheel": true,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_pdop_ic_cards",
+                            "label": "Cards",
+                            "name": "cards",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "min": 1,
+                            "max": 10,
+                            "layout": "block",
+                            "button_label": "Add Icon Card",
+                            "rows_per_page": 20,
+                            "collapsed": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_pdop_ic_card_icon",
+                                    "label": "Icon Image",
+                                    "name": "icon",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "Blue icon image. Recommend SVG or PNG @2x, ~80×80 px.",
+                                    "required": 1,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "25",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": 0,
+                                    "min_height": 0,
+                                    "min_size": 0,
+                                    "max_width": 0,
+                                    "max_height": 0,
+                                    "max_size": 0,
+                                    "mime_types": "",
+                                    "parent_repeater": "field_pdop_ic_cards"
+                                },
+                                {
+                                    "key": "field_pdop_ic_card_title",
+                                    "label": "Card Title",
+                                    "name": "title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placeholder": "e.g. Mission",
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_pdop_ic_cards"
+                                },
+                                {
+                                    "key": "field_pdop_ic_card_link",
+                                    "label": "Card Link",
+                                    "name": "link",
+                                    "aria-label": "",
+                                    "type": "url",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "25",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placeholder": "https:\/\/",
+                                    "default_value": "",
+                                    "parent_repeater": "field_pdop_ic_cards"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "image_text": {
+                    "key": "layout_pdop_image_text",
+                    "name": "image_text",
+                    "label": "🖼 Image + Text (2-column, reusable)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_pdop_it_image",
+                            "label": "Image",
+                            "name": "image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Displayed with rounded corners. Recommend min 700×500 px.",
+                            "required": 1,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": 0,
+                            "min_height": 0,
+                            "min_size": 0,
+                            "max_width": 0,
+                            "max_height": 0,
+                            "max_size": 0,
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_pdop_it_image_position",
+                            "label": "Image Position",
+                            "name": "image_position",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "left": "⬅ Left",
+                                "right": "➡ Right"
+                            },
+                            "default_value": "left",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_pdop_it_bg_color",
+                            "label": "Background Colour",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#ffffff",
+                            "enable_opacity": false,
+                            "custom_palette_source": "",
+                            "palette_colors": "",
+                            "show_color_wheel": true,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_pdop_it_content",
+                            "label": "Text Content",
+                            "name": "content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Supports bold\/italic mixed styling. Use bold text inline for emphasis (e.g. \"The District is a member of <strong>WSSRA<\/strong>…\").",
+                            "required": 1,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "default_value": "",
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_pdop_it_partner_logo",
+                            "label": "Partner \/ Association Logo (optional)",
+                            "name": "partner_logo",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Optional logo shown below the text content (e.g. WSSRA logo).",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": 0,
+                            "min_height": 0,
+                            "min_size": 0,
+                            "max_width": 0,
+                            "max_height": 0,
+                            "max_size": 0,
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/about-us.php"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Flexible content sections for the About Us page template.",
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1776839532
+}

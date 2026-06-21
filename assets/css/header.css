@@ -1,0 +1,379 @@
+/* Top Header */
+.pdop_top_header {
+  background-color: var(--color-accent-sky);
+}
+.pdop_marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  padding-block: 2px;
+}
+
+.pdop_marquee_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pdop_marquee_content {
+  display: inline-flex;
+  align-items: center;
+  gap: 90px;
+  animation: scroll-left 30s linear infinite;
+}
+
+.pdop_marquee_content .pdop_marquee_text {
+  font-size: var(--body-base);
+  font-weight: var(--fw-semibold);
+  color: #fff;
+}
+
+.pdop_marquee_icon {
+  display: inline-flex;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Header */
+.site-header {
+  padding-block: 13px;
+  align-items: center;
+  background-color: var(--color-white);
+  transition: all 0.3s ease-in-out;
+}
+
+.site-header:not(.offcanvas).is-scrolled,
+.home .site-header:not(.offcanvas).is-scrolled {
+  background-color: var(--color-white);
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Logo swap on scroll */
+.pdop_scrolled_logo {
+  display: none;
+}
+
+.site-header.is-scrolled .custom-logo-link,
+body:not(.home) .site-header .custom-logo-link {
+  display: none;
+}
+
+.site-header.is-scrolled .pdop_scrolled_logo,
+body:not(.home) .site-header .pdop_scrolled_logo {
+  display: inline-block;
+}
+
+.site-header:not(.offcanvas) {
+  position: sticky;
+  top: var(--wp-admin--admin-bar--height, 0);
+  z-index: 999;
+}
+
+.navbar-nav li {
+  position: relative;
+}
+
+.primary_menu .navbar-nav {
+  gap: 32px;
+}
+
+.primary_menu .menu-item a {
+  display: block;
+  color: var(--color-white);
+  font-size: var(--body-base);
+  font-weight: var(--fw-regular);
+  text-decoration: none;
+}
+
+.site-header:not(.offcanvas).is-scrolled .primary_menu .menu-item a,
+body:not(.home) .site-header:not(.offcanvas) .primary_menu .menu-item a {
+  color: var(--color-black);
+}
+
+.site-header:not(.offcanvas).is-scrolled .primary_menu .menu-item:not(.login_btn) a:not(.megamenu-tab-pane__link):hover, body:not(.home) .site-header:not(.offcanvas) .primary_menu .menu-item:not(.login_btn) a:not(.megamenu-tab-pane__link):hover, .site-header:not(.offcanvas) .primary_menu .menu-item:not(.login_btn)[aria-expanded="true"] a:not(.megamenu-tab-pane__link){color: var(--color-secondary);}
+
+.rainout_btn a {
+  border: 1px solid #2b3c73;
+  background-color: #2b3c73;
+  border-radius: 50px;
+  padding: 8px 10px;
+  line-height: 1;
+  position: relative;
+  display: flex;
+  color: #fff;
+}
+
+.rainout_btn a:after {
+  content: "";
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23fff" class="bi bi-arrow-up-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg>');
+  background-position: right;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  width: 20px;
+}
+
+.primary_menu .login_btn a {
+  background-color: var(--color-accent-green);
+  color: var(--color-primary);
+  padding: 13px 32px;
+  border-radius: 50px;
+  font-weight: var(--fw-bold);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.primary_menu .login_btn a:before {
+  content: "";
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7.25 7C7.25 4.381 9.381 2.25 12 2.25C14.619 2.25 16.75 4.381 16.75 7C16.75 9.619 14.619 11.75 12 11.75C9.381 11.75 7.25 9.619 7.25 7ZM15 13.25H9C5.83 13.25 3.25 15.83 3.25 19C3.25 20.517 4.483 21.75 6 21.75H18C19.517 21.75 20.75 20.517 20.75 19C20.75 15.83 18.17 13.25 15 13.25Z" fill="%232B3C73"/></svg>');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.primary_menu .login_btn a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/wp-content/uploads/2026/02/login_gif.gif");
+  height: 18px;
+  width: 34px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.primary_menu .header_phone a {
+  position: relative;
+  padding-left: 25px;
+  font-weight: var(--fw-regular);
+}
+
+.primary_menu .header_phone a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 14px;
+  background-image: url("/wp-content/uploads/2026/02/Call-Icon.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+
+.primary_menu .pdop_search a {
+  color: transparent;
+  width: 19px;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+.primary_menu .pdop_search a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 19px;
+  height: 18px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none"><g clip-path="url(%23clip0_40001912_7874)"><path d="M18.3929 16.3951L13.8709 11.9395C15.0336 10.6301 15.6706 8.98262 15.6706 7.26749C15.6706 3.26026 12.2292 0 7.99937 0C3.76951 0 0.328125 3.26026 0.328125 7.26749C0.328125 11.2747 3.76951 14.535 7.99937 14.535C9.58732 14.535 11.1006 14.0812 12.3943 13.2199L16.9507 17.7093C17.1412 17.8967 17.3973 18 17.6718 18C17.9316 18 18.1781 17.9062 18.3652 17.7355C18.7628 17.3731 18.7755 16.7721 18.3929 16.3951ZM7.99937 1.89587C11.1259 1.89587 13.6694 4.30552 13.6694 7.26749C13.6694 10.2295 11.1259 12.6391 7.99937 12.6391C4.87284 12.6391 2.32932 10.2295 2.32932 7.26749C2.32932 4.30552 4.87284 1.89587 7.99937 1.89587Z" fill="white"/></g><defs><clipPath id="clip0_40001912_7874"><rect width="19" height="18" fill="white"/></clipPath></defs></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+body:not(.home) .primary_menu .pdop_search a:before,
+.site-header.is-scrolled .primary_menu .pdop_search a:before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none"><g clip-path="url(%23clip0_40001912_7874)"><path d="M18.3929 16.3951L13.8709 11.9395C15.0336 10.6301 15.6706 8.98262 15.6706 7.26749C15.6706 3.26026 12.2292 0 7.99937 0C3.76951 0 0.328125 3.26026 0.328125 7.26749C0.328125 11.2747 3.76951 14.535 7.99937 14.535C9.58732 14.535 11.1006 14.0812 12.3943 13.2199L16.9507 17.7093C17.1412 17.8967 17.3973 18 17.6718 18C17.9316 18 18.1781 17.9062 18.3652 17.7355C18.7628 17.3731 18.7755 16.7721 18.3929 16.3951ZM7.99937 1.89587C11.1259 1.89587 13.6694 4.30552 13.6694 7.26749C13.6694 10.2295 11.1259 12.6391 7.99937 12.6391C4.87284 12.6391 2.32932 10.2295 2.32932 7.26749C2.32932 4.30552 4.87284 1.89587 7.99937 1.89587Z" fill="black"/></g><defs><clipPath id="clip0_40001912_7874"><rect width="19" height="18" fill="black"/></clipPath></defs></svg>');
+}
+
+.header-contact-details {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: solid 1px #666666;
+  padding-bottom: 7px;
+}
+
+body:not(.home) .header-contact-details,
+.site-header.is-scrolled .header-contact-details {
+  border-color: #e2e2e2;
+}
+
+.header-contact-details a {
+  color: white;
+  font-size: var(--body-small);
+}
+
+.site-header.is-scrolled .header-contact-details a,
+body:not(.home) .site-header .header-contact-details a {
+  color: var(--color-black);
+}
+
+.header-contact-details a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header-contact-details a.c-number:before {
+  /* content: ""; */
+  left: 0;
+  width: 16px;
+  height: 14px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none"><path d="M10.3342 14.9611C10.2319 14.9613 10.1298 14.9526 10.029 14.935C6.92384 14.3347 4.16897 12.562 2.33604 9.98468C1.40485 8.77199 0.729609 7.38284 0.351247 5.90145C-0.027115 4.42006 -0.100719 2.87726 0.134896 1.36658C0.229846 0.92452 0.494113 0.537203 0.871112 0.287565C1.24811 0.0379272 1.70787 -0.054187 2.15195 0.0309466L4.27405 0.398121C4.40743 0.419004 4.53084 0.481378 4.62675 0.576386C4.72266 0.671393 4.78619 0.794203 4.80833 0.927373L5.30059 4.15091C5.31491 4.24645 5.30643 4.34403 5.27582 4.43567C5.24522 4.5273 5.19336 4.6104 5.12449 4.67816L4.02992 5.76668C4.62539 7.41246 5.68154 8.85232 7.07251 9.91465L8.52326 9.31436C8.61512 9.2755 8.71446 9.25749 8.81411 9.26165C8.91376 9.2658 9.01126 9.29201 9.09956 9.33838L12.0861 10.9011C12.2055 10.9614 12.3023 11.0586 12.3622 11.1783C12.422 11.298 12.4417 11.4337 12.4183 11.5654L12.0411 13.5914C11.9604 13.9826 11.7457 14.3334 11.4342 14.5834C11.1226 14.8334 10.7336 14.967 10.3342 14.9611Z" fill="currentColor"/><path d="M10.4531 2.12808C10.5508 2.13317 10.6448 2.16676 10.7236 2.22469C10.8024 2.28263 10.8624 2.36238 10.8963 2.45407C10.9302 2.54577 10.9365 2.64538 10.9144 2.7406C10.8922 2.83581 10.8426 2.92245 10.7717 2.9898C10.7009 3.05715 10.6118 3.10226 10.5155 3.11954C10.4192 3.13681 10.32 3.12551 10.2301 3.08702C10.1402 3.04853 10.0636 2.98455 10.0097 2.90298C9.95575 2.82141 9.92695 2.72584 9.92682 2.62808C9.93101 2.49228 9.98862 2.3636 10.0872 2.26999C10.1857 2.17638 10.3172 2.12539 10.4531 2.12808ZM12.8343 2.12808C12.932 2.13317 13.026 2.16676 13.1048 2.22469C13.1836 2.28263 13.2437 2.36238 13.2776 2.45407C13.3115 2.54577 13.3177 2.64538 13.2956 2.7406C13.2735 2.83581 13.2239 2.92245 13.153 2.9898C13.0821 3.05715 12.993 3.10226 12.8967 3.11954C12.8005 3.13681 12.7013 3.12551 12.6114 3.08702C12.5214 3.04853 12.4448 2.98455 12.3909 2.90298C12.337 2.82141 12.3082 2.72584 12.3081 2.62808C12.3123 2.49228 12.3699 2.3636 12.4684 2.26999C12.5669 2.17638 12.6984 2.12539 12.8343 2.12808ZM10.283 6.64208C10.3524 6.66983 10.4283 6.67714 10.5017 6.66314C10.5751 6.64914 10.6429 6.61442 10.6972 6.56308L12.104 5.21208H13.4677C14.1616 5.22903 14.834 4.97037 15.3375 4.49279C15.8411 4.0152 16.1347 3.35762 16.1541 2.66408C16.1355 1.96994 15.8422 1.31149 15.3386 0.833098C14.8351 0.354709 14.1622 0.0954217 13.4677 0.112084H10.4251C9.73341 0.0981467 9.06449 0.359204 8.56528 0.837903C8.06607 1.3166 7.7774 1.97379 7.7627 2.66508C7.77484 3.28997 8.01248 3.88942 8.43184 4.35304C8.85121 4.81666 9.42406 5.11321 10.0449 5.18808V6.30608C10.0457 6.3791 10.0684 6.45019 10.1102 6.51011C10.1519 6.57003 10.2108 6.61601 10.279 6.64208H10.283Z" fill="currentColor"/><path d="M10.029 14.9351C6.92357 14.3353 4.16833 12.5629 2.33498 9.98573C1.40481 8.7724 0.730637 7.38287 0.353313 5.90133C-0.0240118 4.41978 -0.096636 2.87706 0.13984 1.36663C0.234594 0.925419 0.498022 0.538703 0.873919 0.288988C1.24982 0.0392736 1.70842 -0.053668 2.15189 0.0299932L4.27399 0.395167C4.40731 0.416194 4.53064 0.478615 4.62652 0.573597C4.72241 0.668579 4.78599 0.79131 4.80827 0.924419L5.30053 4.14795C5.31477 4.24349 5.30625 4.34105 5.27565 4.43267C5.24505 4.5243 5.19324 4.6074 5.12443 4.6752L4.02386 5.76572C4.62088 7.4123 5.67877 8.85251 7.07145 9.9147L8.5222 9.31441C8.61409 9.27568 8.71341 9.25776 8.81304 9.26191C8.91267 9.26606 9.01015 9.29219 9.0985 9.33842L12.0851 10.8962C12.2044 10.9564 12.3012 11.0534 12.3612 11.1728C12.4211 11.2923 12.4412 11.4278 12.4182 11.5595L12.037 13.5914C11.9567 13.9817 11.743 14.3319 11.4326 14.5818C11.1223 14.8317 10.7346 14.9658 10.3361 14.9611C10.2332 14.9618 10.1304 14.9531 10.029 14.9351ZM10.2841 6.64714C10.2157 6.62099 10.1568 6.57483 10.115 6.51469C10.0733 6.45454 10.0506 6.3832 10.05 6.30998V5.19145C9.42827 5.11766 8.85423 4.82145 8.43384 4.3575C8.01345 3.89355 7.77511 3.29319 7.76281 2.66725C7.77908 1.97659 8.06841 1.32052 8.56741 0.842726C9.06642 0.36493 9.73445 0.104344 10.4252 0.118035H13.4678C14.1619 0.101352 14.8344 0.360321 15.3381 0.838267C15.8417 1.31621 16.1355 1.97421 16.1552 2.66825C16.1353 3.36203 15.8413 4.01967 15.3377 4.49724C14.834 4.97481 14.1617 5.23342 13.4678 5.21646H12.1031L10.6933 6.5671C10.6199 6.63537 10.5235 6.67357 10.4232 6.67415C10.3756 6.6739 10.3284 6.66473 10.2841 6.64714ZM12.3132 2.63423C12.308 2.73927 12.3344 2.84345 12.3889 2.93334C12.4435 3.02324 12.5238 3.09472 12.6194 3.13857C12.715 3.18242 12.8215 3.19662 12.9252 3.17935C13.029 3.16208 13.1252 3.11412 13.2014 3.04167C13.2776 2.96921 13.3304 2.87558 13.3529 2.77286C13.3754 2.67013 13.3666 2.56302 13.3277 2.46533C13.2887 2.36765 13.2214 2.28387 13.1344 2.22481C13.0473 2.16576 12.9446 2.13412 12.8394 2.13399C12.7717 2.13186 12.7042 2.14312 12.6408 2.16712C12.5774 2.19112 12.5193 2.2274 12.47 2.27387C12.4206 2.32034 12.3809 2.37609 12.3532 2.43793C12.3254 2.49976 12.3101 2.56647 12.3082 2.63423H12.3132ZM9.93194 2.63423C9.92674 2.73927 9.95313 2.84345 10.0077 2.93334C10.0623 3.02324 10.1425 3.09472 10.2381 3.13857C10.3337 3.18242 10.4403 3.19662 10.544 3.17935C10.6477 3.16208 10.7439 3.11412 10.8202 3.04167C10.8964 2.96921 10.9491 2.87558 10.9717 2.77286C10.9942 2.67013 10.9854 2.56302 10.9464 2.46533C10.9075 2.36765 10.8401 2.28387 10.7531 2.22481C10.6661 2.16576 10.5634 2.13412 10.4582 2.13399C10.3905 2.13186 10.3229 2.14312 10.2595 2.16712C10.1961 2.19112 10.1381 2.2274 10.0888 2.27387C10.0394 2.32034 9.9997 2.37609 9.97194 2.43793C9.94417 2.49976 9.92887 2.56647 9.92693 2.63423H9.93194Z" fill="currentColor"/></svg>');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+}
+
+.header-contact-details .c-email:before {
+  /* content: ""; */
+  left: 0;
+  width: 16px;
+  height: 14px;
+  background-image: url("/wp-content/uploads/2026/02/Envelope.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+}
+
+.primary_menu {
+  padding-top: 7px;
+}
+
+.primary_menu .menu-item:not(.pdop_search, .login_btn) a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.primary_menu .menu-item:not(.pdop_search, .login_btn) a:after {
+  /* content: ""; */
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'><path d='M13.2807 5.9668L8.93404 10.3135C8.4207 10.8268 7.5807 10.8268 7.06737 10.3135L2.7207 5.9668' stroke='currentColor' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Media Queries */
+@media (min-width: 1920px) {
+  .primary_menu .navbar-nav {
+    gap: 38px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .custom-logo {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .custom-logo {
+    max-width: 180px;
+  }
+
+  .primary_menu .navbar-nav {
+    gap: 22px;
+  }
+
+  .primary_menu .login_btn a {
+    padding: 8px 22px;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* Header */
+  #masthead .navbar-toggler {
+    padding: 6px;
+    color: white;
+    border: none;
+  }
+
+  #masthead .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.09rem;
+  }
+
+  #masthead .navbar-toggler-icon {
+    background: none;
+    width: auto;
+    height: auto;
+  }
+
+  .offcanvas-header {
+    border-bottom: solid 1px #ffffff5c;
+  }
+
+  .offcanvas-body {
+    width: 100%;
+  }
+
+  .site-header .navbar-nav {
+    margin: 0;
+    gap: 20px;
+  }
+
+  .site-header .offcanvas-body :is(.header_phone, .pdop_search) {
+    display: none;
+  }
+
+  .offcanvas-header .btn-close {
+    background: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .offcanvas-header .btn-close:focus {
+    box-shadow: 0 0 0 0.05rem #ffffff;
+  }
+
+  .login_btn {
+    order: -1;
+    background: #1f2c56;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 4px;
+  }
+
+  .header-contact-details {
+    display: none;
+  }
+}
+
+@media (max-width: 1600px) {
+  .primary_menu .login_btn a {
+    padding: 10px 20px;
+  }
+  .primary_menu .login_btn a:after {
+    height: 14px;
+    width: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-logo {
+    max-width: 160px;
+  }
+}

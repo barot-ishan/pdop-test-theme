@@ -1,0 +1,212 @@
+/* ==========================================================================
+   Mission, Vision, Values Page Styles
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Text and Image Section
+   -------------------------------------------------------------------------- */
+.mission_vission_sec {
+    padding-block: 60px;
+    background-color: #F4F0FF;
+}
+
+.mv_col:nth-child(2) {
+    text-align: center;
+}
+
+.mv_col h2 {
+    font-weight: var(--fw-black);
+    text-transform: uppercase;
+    /* margin-bottom: 10px; */
+    padding-bottom: 30px;
+    position: relative;
+}
+.mv_col h2::before{content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 15px; background: var(--bg-image) no-repeat center; background-size: cover;}
+.mv_col h2 span{display: block;}
+.mv_col.ov_sec{text-align: right;}
+
+.mv_content {
+    margin-top: 10px;
+}
+
+.mv_content p {
+    font-size: clamp(16px, 1.25vw, 24px);
+}
+
+.mv_col:nth-child(2) img {
+    width: 170px;
+}
+
+/* --------------------------------------------------------------------------
+   Values Scroll Section
+   -------------------------------------------------------------------------- */
+.pdop_values {
+    position: relative;
+    padding-inline: 0;
+    padding-bottom: 6rem;
+}
+
+.pdop_values_sticky_layer {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding-inline: var(--container-padding);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.pdop_values_scroll_layer {
+    position: relative;
+    padding-inline: var(--container-padding);
+    z-index: 1;
+    margin-top: -100vh;
+    padding-block: 75px 52px;
+    /* Accounts for sticky header height + spacing */
+    padding-bottom: 100px;
+}
+
+.values_section_title {
+    color: var(--color-white);
+    text-align: center;
+    font-weight: var(--fw-black);
+    text-transform: uppercase;
+}
+
+.values_card_container {
+    max-width: 990px;
+    margin-inline: auto;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.value_card {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.80);
+    box-shadow: 0 16px 38px 0 rgba(0, 0, 0, 0.10), 0 70px 70px 0 rgba(0, 0, 0, 0.10);
+    transition: background-color 0.4s ease;
+}
+
+.value_card:hover {
+    background: var(--color-white);
+}
+
+.values_img .col-md-4 {width: 33.4% !important;}
+.values_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.values_card_content {
+    padding: 40px 30px;
+    padding-right: 100px;
+    min-height: 500px;
+}
+.values_card_content .values_points{padding-right: 105px;}
+
+.values_card_heading {
+    font-size: var(--h4-size);
+    font-weight: var(--fw-extrabold);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.values_points ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: var(--body-small);
+    line-height: 19px;
+    text-underline-position: from-font;
+}
+
+.values_points ul li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 8px;
+}
+
+.values_points ul li:last-child {
+    margin-bottom: 0;
+}
+
+.values_points ul li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 18px;
+    background-image: url('/wp-content/uploads/2026/04/tick_svg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.values_points ul li strong {
+    font-weight: var(--fw-semibold);
+}
+
+.values_card_content .pdop_btn.pdop_btn_secondary {
+    margin-top: 16px;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 1919px) {
+    .mission_vission_sec {
+        padding-block: 95px 93px;
+    }
+
+    .mv_col h2 {
+        /* margin-bottom: 44px; */
+        padding-bottom: 44px;
+    }
+
+    .mv_content {
+        margin-top: 28px;
+    }
+
+    .mv_col:nth-child(2) img {
+        width: 227px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .pdop_values {
+        padding-bottom: 12rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .mv_col h2{padding-bottom: 40px;}
+    .mv_col h2::before{height: 10px;}
+    .mv_col.ov_sec{text-align: left;}
+    .mv_col.ov_sec h2::before{transform: scale(-1);}
+}
+
+@media (max-width: 768px) {
+    .mission_vision_row {
+        gap: 60px;
+    }
+
+    .mv_col {
+        order: 1;
+    }
+
+    .mv_col:nth-child(2) {
+        order: 0;
+    }
+
+    .pdop_values {
+        padding-bottom: 3rem;
+    }
+
+    .values_img img {
+        border-radius: 20px 20px 0 0;
+    }
+}

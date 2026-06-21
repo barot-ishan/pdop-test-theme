@@ -1,0 +1,367 @@
+.text_img_section {
+    padding-block: clamp(48px, 4.69vw, 90px) clamp(48px, 5vw, 90px);
+    background-color: #F4F0FF;
+}
+
+.text_content h5 {
+    font-size: var(--h4-2-size);
+    margin-bottom: clamp(22px, 1.9vw, 30px);
+    font-weight: var(--fw-regular);
+    line-height: 133%;
+}
+
+.text_content p {
+    font-size: var(--body-medium);
+}
+
+.awardsSwiper {
+    border-radius: 20px;
+}
+
+.awardsSwiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.awardsSwiper .swiper-button-prev {
+    left: 26px;
+}
+
+.awardsSwiper .swiper-button-next {
+    right: 26px;
+}
+
+.awardsSwiper :is(.swiper-button-prev svg, .swiper-button-next svg) {
+    fill: none;
+}
+
+.awardsSwiper .swiper-pagination-bullet {
+    background: #BFBFBF;
+    opacity: 1;
+}
+
+.awardsSwiper .swiper-pagination-bullet-active {
+    background: var(--color-secondary);
+}
+
+.awars_recognition_section {
+    background: #F4F0FF;
+    padding-bottom: 180px;
+}
+
+.awards_recognition_row {
+    position: relative;
+    padding-block: clamp(32px, 3.13vw, 60px);
+    padding-inline: clamp(32px, 3.13vw, 60px) clamp(36px, 3.33vw, 64px);
+    background-color: var(--color-primary);
+    border-radius: 30px;
+}
+
+.award_left_col:before {
+    content: '';
+    position: absolute;
+    left: calc(63px - 8vw);
+    bottom: 5rem;
+    width: clamp(240px, 25vw, 480px);
+    height: clamp(240px, 25vw, 480px);
+    background-image: url('/wp-content/uploads/2026/04/Flower-section-decor.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.awards_recognition_row * {
+    color: var(--color-white);
+}
+
+.award_left_col {
+    position: sticky;
+    height: 100vh;
+    top: 10rem;
+}
+
+.awars_recognition_section h2 {
+    font-weight: var(--fw-black);
+    text-transform: uppercase;
+}
+
+.award_category_group {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: solid 1px #6272A6;
+    /* gap: 53px; */
+}
+
+.award_category_group:last-of-type {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.award_img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.award_img_bg {
+    position: relative;
+    bottom: -10px;
+}
+
+.award_img_bg:first-child {
+    left: 39px;
+}
+
+.award_img_bg:last-child {
+    right: 39px;
+}
+
+.award_img_main {
+    border-radius: 50%;
+}
+
+.award_title {
+    font-size: clamp(16px, 1.15vw, 22px);
+    font-weight: var(--fw-bold);
+}
+
+.award_title a {
+    position: relative;
+    color: var(--color-white);
+    transition: color 0.3s ease;
+}
+
+.award_title a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.award_title a:hover:before {
+    opacity: 1;
+}
+
+.award_list {
+    margin: 12px 0 20px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.award_item .award_item_content {
+    padding: 8px 14px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--color-accent-sky);
+    transition: all 0.4s ease;
+}
+
+.award_item .award_item_content:after {
+    content: '';
+    display: inline-block;
+    max-width: 0;
+    width: 19px;
+    height: 19px;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-width 0.4s ease, opacity 0.3s ease;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none"><path d="M4.24219 13.9727L13.3659 4.84898" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/><path d="M5.47266 4.25786L13.973 4.24276L13.9579 12.7431" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/></svg>');
+    background-repeat: no-repeat;
+    background-size: 19px 19px;
+    background-position: center;
+}
+
+.award_item:hover a:after, .award_item:hover .award_item_content:after {
+    max-width: 19px;
+    opacity: 1;
+}
+
+.award_item .award_text {
+    position: relative;
+    font-weight: var(--fw-medium);
+}
+
+.award_item .award_text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.award_item:hover .award_text::after {
+    opacity: 1;
+}
+
+.award_post_card:not(:last-child) {
+    margin-bottom: 36px;
+}
+
+/*  */
+/*  */
+/*  */
+/* ── Visually hidden (ADA utility) ────────────────────────────────────────── */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ── Awards filters block ─────────────────────────────────────────────────── */
+.awards_filters {
+    margin-top: clamp(28px, 2.6vw, 48px);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(18px, 1.56vw, 30px);
+}
+
+.filter_group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filter_label {
+    font-size: var(--body-base);
+    font-weight: var(--fw-medium);
+    color: var(--color-white);
+    user-select: none;
+}
+
+/* Wrapper provides the positioning context for the custom chevron */
+.filter_select_wrap {
+    position: relative;
+    width: 276px;
+}
+
+.filter_select {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 1px solid #CECECE;
+    background: var(--color-white);
+    color: #989898;
+    font-size: var(--body-base);
+    cursor: pointer;
+}
+
+.filter_select_wrap select option {
+    color: var(--color-black);
+}
+
+/* Focus ring — visible & accessible */
+.filter_select:focus-visible {
+    outline: none;
+    border-color: var(--color-accent-sky, #60a5fa);
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.35);
+}
+
+/* Remove default focus ring in older browsers while keeping focus-visible */
+.filter_select:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Hover state */
+.filter_select:hover {
+    border-color: var(--color-accent-sky, #60a5fa);
+}
+
+/* Custom chevron icon */
+.filter_chevron {
+    pointer-events: none;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1a1a2e;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+/* Rotate chevron while the native select is open (Chrome/Edge support) */
+/* .filter_select[]+.filter_chevron, */
+.filter_select[aria-expanded="true"]+.filter_chevron {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* ── No-results feedback ──────────────────────────────────────────────────── */
+.awards-no-filter-results {
+    color: var(--color-white);
+    font-size: var(--body-medium);
+    padding: clamp(24px, 2vw, 40px) 0;
+    opacity: 0.85;
+}
+
+/* ── Hidden items / containers ───────────────────────────────────────────── */
+/*
+ * The JS uses the native `hidden` attribute which already sets display:none.
+ * These rules are a belt-and-suspenders fallback for browsers that don't
+ * honour [hidden] by default (very rare, but worth having).
+ */
+.award_container[hidden],
+.award_item[hidden] {
+    display: none !important;
+}
+
+/* ── Responsive adjustments ──────────────────────────────────────────────── */
+@media (min-width: 1919px) {
+    .award_left_col:before {
+        left: calc(63px - 7vw);
+    }
+}
+
+@media (max-width: 1199px) {
+    .awards_recognition_row {
+        gap: 80px;
+    }
+
+    .awards_filters {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .filter_group {
+        flex: 1 1 200px;
+    }
+
+    .award_left_col {
+        height: auto;
+    }
+
+    .award_left_col:before {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .filter_group {
+        flex: 1 1 100%;
+    }
+
+    .filter_select_wrap {
+        width: auto;
+    }
+}

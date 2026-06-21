@@ -1,0 +1,30 @@
+.program-activity+.btn.btn-primary {display: none;}
+
+.program-activity .srec_act_page_header.pdop_container, .program-activity .srec_act_wrap.pdop_container{padding-inline: 0;}
+.program-activity .srec_act_page_header{flex-flow: row;}
+.program-activity .pdop_program_content{background: var(--color-white); border-radius: 20px; padding: 40px; border: 1px solid #000;}
+.program-activity .srec_act_filter_container{padding: 20px 30px;}
+.program-activity .srec_act_page_title{color: #000; font-size: 32px; font-weight: 800; line-height: normal; text-transform: uppercase;}
+.program-activity .srec_act_search_wrap .srec_filter_search_input{border-radius: 10px !important; border: 1px solid #BFBFBF !important; background: #FFF !important; padding: 8px 15px !important; padding-right: 36px !important; outline: none !important;}
+.program-activity .srec_act_search_wrap svg{left: initial; right: 15px;}
+.program-activity .srec_act_category{background: #E2F8FF; padding: 10px; border-radius: 20px;}
+.program-activity .srec_act_cat_hdr{background: var(--color-accent-sky); padding: 14px 20px 14px 30px; border-radius: 20px;}
+.program-activity .srec_act_cat_title{color: #FFF; font-size: 26px; font-weight: 600; line-height: normal;}
+.program-activity .srec_act_sub_section{margin-bottom: 0;}
+.program-activity .srec_act_sub_section+.srec_act_sub_section{margin-top: 50px;}
+.program-activity .srec_act_sub_title{color: #000; font-size: 22px; font-weight: 600; line-height: 19px; padding-bottom: 0; margin-bottom: 12px;}
+.program-activity .srec_act_cat_toggle{width: 24px; height: auto; aspect-ratio: 1;}
+.program-activity .srec_act_cat_body{background: initial; padding: 20px; padding-top: 20px;}
+.program-activity .srec_act_card{padding: 6px; border-radius: 20px; border: 1px solid #FFF; background: rgba(255, 255, 255, 0.80); box-shadow: 0 69px 69px 0 rgba(0, 0, 0, 0.09), 0 17px 38px 0 rgba(0, 0, 0, 0.10); backdrop-filter: blur(5px);}
+.program-activity .srec_act_card_img_wrap{overflow: hidden; border-radius:15px; width: 100%; height: 120px;}
+.program-activity .srec_act_card_img_wrap img{width: 100%; height: 100%; object-fit: cover;}
+.program-activity .srec_act_badge{background: #FCFFD6; padding: 2px 7px; border-radius: 10px; color: #000; font-size: 11px; font-weight: 600; line-height: 15px; top: 4px; left: 4px;}
+.program-activity .srec_act_card_name{color: #333; font-size: 16px; font-weight: 700; line-height: 24px;}
+.program-activity .srec_act_card_meta{display: flex; flex-direction: column; gap: 6px;}
+.program-activity .srec_act_card_meta li{overflow: hidden; color: #000; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; font-weight: 500; line-height: normal;}
+.program-activity .srec_act_card_price{border-top: 1px solid #C6C6C6; color: #5D5D5D; text-align: center; font-size: 16px; font-weight: 600; line-height: 24px; margin-top: initial;}
+.program-activity .srec_act_card_footer{margin-top: auto; gap: 26px;}
+.program-activity .srec_act_link_details{color: var(--color-primary); text-align: right; font-size: 16px; font-weight: 600; line-height: normal; position: relative;}
+.program-activity .srec_act_link_details::before{content: ""; position: absolute; bottom: -10px; right: 0; left: 50%; transform: translateX(-50%); width: 210%; height: 1px; background: rgba(198, 198, 198, 1); background-size: contain; background-repeat: no-repeat;}
+.program-activity .srec_act_link_details svg{width: 7px; height: 12px;}
+.program-activity .pdop_btn{width: 100%;}

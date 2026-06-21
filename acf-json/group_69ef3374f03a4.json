@@ -1,0 +1,1486 @@
+{
+    "key": "group_69ef3374f03a4",
+    "title": "Program Page",
+    "fields": [
+        {
+            "key": "field_69ef35c7baea7",
+            "label": "Not Sure Section",
+            "name": "not_sure_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "relevanssi_exclude": 0,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_69ef346cfc5c7",
+                    "label": "Heading",
+                    "name": "heading",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_69ef3473fc5c8",
+                    "label": "Sub Heading",
+                    "name": "subheading",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_69ef3487fc5c9",
+                    "label": "Not Sure Choices",
+                    "name": "not_sure_choices",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "layout": "table",
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_69ef34affc5ca",
+                            "label": "Choice Link",
+                            "name": "choice_link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "return_format": "array",
+                            "allow_in_bindings": 0,
+                            "parent_repeater": "field_69ef3487fc5c9"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_69ef3375fc5c5",
+            "label": "Program Page Sections",
+            "name": "program_page_sections",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "relevanssi_exclude": 0,
+            "layouts": {
+                "layout_69ef338c06330": {
+                    "key": "layout_69ef338c06330",
+                    "name": "program_page_card",
+                    "label": "Program Page Card",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_69f0ed563c5da",
+                            "label": "Icon",
+                            "name": "icon",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "svg",
+                            "allow_in_bindings": 0,
+                            "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_69f0ed4d3c5d9",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_69ef33dcfc5c6",
+                            "label": "Program Page Card Content",
+                            "name": "program_page_card_content",
+                            "aria-label": "",
+                            "type": "flexible_content",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "layouts": {
+                                "layout_69ef34c9fc5cb": {
+                                    "key": "layout_69ef34c9fc5cb",
+                                    "name": "program_heading_section",
+                                    "label": "Program Heading Section",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_69ef3b945b621",
+                                            "label": "Heading",
+                                            "name": "heading",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "allow_in_bindings": 0,
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_69ef3c685b622",
+                                            "label": "Sub Heading",
+                                            "name": "sub_heading",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "allow_in_bindings": 0,
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_69ef3c715b623",
+                                            "label": "Description",
+                                            "name": "description",
+                                            "aria-label": "",
+                                            "type": "wysiwyg",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "default_value": "",
+                                            "allow_in_bindings": 0,
+                                            "tabs": "all",
+                                            "toolbar": "full",
+                                            "media_upload": 1,
+                                            "delay": 0
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "layout_69ef3c995b624": {
+                                    "key": "layout_69ef3c995b624",
+                                    "name": "program_highlight_section",
+                                    "label": "Program Highlight Section",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_69f0774ac96a4",
+                                            "label": "Icon",
+                                            "name": "icon",
+                                            "aria-label": "",
+                                            "type": "button_group",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "choices": {
+                                                "default": "Default",
+                                                "numbered": "Numbered"
+                                            },
+                                            "default_value": "",
+                                            "return_format": "value",
+                                            "allow_null": 0,
+                                            "allow_in_bindings": 0,
+                                            "layout": "horizontal"
+                                        },
+                                        {
+                                            "key": "field_69ef3c995b625",
+                                            "label": "Heading",
+                                            "name": "heading",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "allow_in_bindings": 0,
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_69ef3cb85b628",
+                                            "label": "Highlights",
+                                            "name": "highlights",
+                                            "aria-label": "",
+                                            "type": "repeater",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "layout": "",
+                                            "min": 0,
+                                            "max": 0,
+                                            "collapsed": "",
+                                            "button_label": "Add Row",
+                                            "rows_per_page": 20,
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_69ef3cc85b629",
+                                                    "label": "Title",
+                                                    "name": "title",
+                                                    "aria-label": "",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "default_value": "",
+                                                    "maxlength": "",
+                                                    "allow_in_bindings": 0,
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "parent_repeater": "field_69ef3cb85b628"
+                                                },
+                                                {
+                                                    "key": "field_69ef3cd85b62a",
+                                                    "label": "Description",
+                                                    "name": "description",
+                                                    "aria-label": "",
+                                                    "type": "wysiwyg",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "default_value": "",
+                                                    "allow_in_bindings": 0,
+                                                    "tabs": "all",
+                                                    "toolbar": "full",
+                                                    "media_upload": 1,
+                                                    "delay": 0,
+                                                    "parent_repeater": "field_69ef3cb85b628"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "layout_69ef40b15b62b": {
+                                    "key": "layout_69ef40b15b62b",
+                                    "name": "program_note_section",
+                                    "label": "Program Note Section",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_69ef40b15b62c",
+                                            "label": "Tag Name",
+                                            "name": "tag_name",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "default_value": "Note",
+                                            "maxlength": "",
+                                            "allow_in_bindings": 0,
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_69ef40b15b62d",
+                                            "label": "Description",
+                                            "name": "description",
+                                            "aria-label": "",
+                                            "type": "wysiwyg",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "default_value": "",
+                                            "allow_in_bindings": 0,
+                                            "tabs": "all",
+                                            "toolbar": "full",
+                                            "media_upload": 1,
+                                            "delay": 0
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "layout_69ef411c5b630": {
+                                    "key": "layout_69ef411c5b630",
+                                    "name": "program_single_description_section",
+                                    "label": "Program Single Description Section",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_69ef411c5b632",
+                                            "label": "Description",
+                                            "name": "description",
+                                            "aria-label": "",
+                                            "type": "wysiwyg",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "default_value": "",
+                                            "allow_in_bindings": 0,
+                                            "tabs": "all",
+                                            "toolbar": "full",
+                                            "media_upload": 1,
+                                            "delay": 0
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "layout_69ef413a5b633": {
+                                    "key": "layout_69ef413a5b633",
+                                    "name": "program_single_button_section",
+                                    "label": "Program Single Button Section",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_69f07a42b672c",
+                                            "label": "Button Color",
+                                            "name": "button_color",
+                                            "aria-label": "",
+                                            "type": "button_group",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "choices": {
+                                                "primary": "Primary",
+                                                "secondary": "Secondary"
+                                            },
+                                            "default_value": "",
+                                            "return_format": "value",
+                                            "allow_null": 0,
+                                            "allow_in_bindings": 0,
+                                            "layout": "horizontal"
+                                        },
+                                        {
+                                            "key": "field_69ef413a5b634",
+                                            "label": "Link",
+                                            "name": "link",
+                                            "aria-label": "",
+                                            "type": "link",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "return_format": "",
+                                            "allow_in_bindings": 0
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "layout_69ef415d5b635": {
+                                    "key": "layout_69ef415d5b635",
+                                    "name": "program_faqs_section",
+                                    "label": "Program FAQs Section",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_69ef417c5b637",
+                                            "label": "Heading",
+                                            "name": "heading",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "allow_in_bindings": 0,
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_69ef41845b638",
+                                            "label": "Description",
+                                            "name": "description",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "allow_in_bindings": 0,
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_69ef41a05b639",
+                                            "label": "FAQs",
+                                            "name": "faqs",
+                                            "aria-label": "",
+                                            "type": "repeater",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "layout": "table",
+                                            "min": 0,
+                                            "max": 0,
+                                            "collapsed": "",
+                                            "button_label": "Add Row",
+                                            "rows_per_page": 20,
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_69ef41b25b63a",
+                                                    "label": "Question",
+                                                    "name": "question",
+                                                    "aria-label": "",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "default_value": "",
+                                                    "maxlength": "",
+                                                    "allow_in_bindings": 0,
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "parent_repeater": "field_69ef41a05b639"
+                                                },
+                                                {
+                                                    "key": "field_69ef41ba5b63b",
+                                                    "label": "Answer",
+                                                    "name": "answer",
+                                                    "aria-label": "",
+                                                    "type": "wysiwyg",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "default_value": "",
+                                                    "allow_in_bindings": 0,
+                                                    "tabs": "all",
+                                                    "toolbar": "full",
+                                                    "media_upload": 1,
+                                                    "delay": 0,
+                                                    "parent_repeater": "field_69ef41a05b639"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "layout_69ef42f6aefc0": {
+                                    "key": "layout_69ef42f6aefc0",
+                                    "name": "program_category_shortcode",
+                                    "label": "Program Category Shortcode",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_69ef44a4aefc3",
+                                            "label": "Title",
+                                            "name": "title",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "default_value": "All Categories",
+                                            "maxlength": "",
+                                            "allow_in_bindings": 0,
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_69ef4436aefc2",
+                                            "label": "Activity Page Link",
+                                            "name": "activity_page_link",
+                                            "aria-label": "",
+                                            "type": "page_link",
+                                            "instructions": "Please select the page where you want to show the activities",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "post_type": [
+                                                "page"
+                                            ],
+                                            "post_status": [
+                                                "publish"
+                                            ],
+                                            "taxonomy": "",
+                                            "allow_archives": 0,
+                                            "multiple": 0,
+                                            "allow_null": 0,
+                                            "allow_in_bindings": 0
+                                        },
+                                        {
+                                            "key": "field_69ef44bbaefc4",
+                                            "label": "Select Program From Amilia",
+                                            "name": "select_program_from_amilia",
+                                            "aria-label": "",
+                                            "type": "select",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "choices": {
+                                                "124904": "Adult Leisure and Lifestyle 2026 (Annual) (ID: 124904)",
+                                                "120179": "Adult Leisure and Lifestyle Winter 2026 (Reg starts 12\/6) (ID: 120179)",
+                                                "124905": "Adult Sports 2026 (Annual) (ID: 124905)",
+                                                "116198": "Adult Sports Winter 2026 (Reg starts 12\/6) (ID: 116198)",
+                                                "124906": "Aquatics 2026 (Annual) (ID: 124906)",
+                                                "116200": "Aquatics Winter 2026 (Reg starts 12\/6) (ID: 116200)",
+                                                "124907": "Arts and Crafts 2026 (Annual) (ID: 124907)",
+                                                "118892": "Birthday Parties 2026 (Ages 1-16 based on party restrictions) (ID: 118892)",
+                                                "125621": "Clubhouse Afterschool Childcare 2026-2027 (ID: 125621)",
+                                                "124908": "Conservatory\/Cheney Mansion\/Pleasant Home Events 2026 (Annual) (ID: 124908)",
+                                                "116204": "Conservatory\/Cheney Mansion\/Pleasant Home Events Winter 2026 (Reg starts 12\/6) (ID: 116204)",
+                                                "114796": "CRC All Day Visit (ID: 114796)",
+                                                "124909": "Early Childhood 2026 (Annual) (ID: 124909)",
+                                                "116206": "Early Childhood Winter 2026 (Reg starts 12\/6) (ID: 116206)",
+                                                "124916": "Esports 2026 (Annual) (ID: 124916)",
+                                                "119997": "Fitness Drop-In Activities 2026 (ID: 119997)",
+                                                "124910": "Gymnastics 2026 (Annual) (ID: 124910)",
+                                                "118806": "Gymnastics Advanced Classes 2025-2026 School Year (ID: 118806)",
+                                                "116208": "Gymnastics Winter 2026 (ID: 116208)",
+                                                "119320": "Ice Bears Fall 2025 (ID: 119320)",
+                                                "128268": "Ice Bears Spring 2026 (ID: 128268)",
+                                                "124911": "Ice Rink Programs 2026 (Annual) (ID: 124911)",
+                                                "116212": "Ice Rink Programs Winter 2026 (Reg starts 12\/6) (ID: 116212)",
+                                                "125278": "Ice Show 2026 and Freestyle Ice during shutdown (Must be registered for Winter 2026 Skate Academy) (ID: 125278)",
+                                                "116196": "Lifelong Learning (Formerly Active Adult) 2026 Annual (ID: 116196)",
+                                                "124913": "Nature & Adventure 2026 (Annual) (ID: 124913)",
+                                                "116190": "Nature & Adventure Winter 2026 (Reg starts 12\/6) (ID: 116190)",
+                                                "124914": "Performing Arts 2026 (Annual) (ID: 124914)",
+                                                "116210": "Performing Arts Winter 2026 (Reg starts 12\/6) (ID: 116210)",
+                                                "109188": "Preschool 2025-2026 (ID: 109188)",
+                                                "125622": "Preschool 2026-2027 (ID: 125622)",
+                                                "124915": "School's Out Programs - 2026 (Annual) (ID: 124915)",
+                                                "116194": "School's Out Programs - Winter 2026 (Reg starts 12\/6) (ID: 116194)",
+                                                "129631": "Special Interest 2026 (Annual) (ID: 129631)",
+                                                "116214": "Special Interest Winter 2026 (Reg starts 12\/6) (ID: 116214)",
+                                                "116192": "Spring Break Camps 2026 (ID: 116192)",
+                                                "124048": "Summer Camps 2026 (ID: 124048)",
+                                                "124917": "Teens 2026 (Annual) (ID: 124917)",
+                                                "116217": "Teens Winter 2026 (Reg starts 12\/6) (ID: 116217)",
+                                                "124918": "Youth Sports 2026 (Annual) (ID: 124918)",
+                                                "116219": "Youth Sports Winter 2026 (Reg starts 12\/6) (ID: 116219)"
+                                            },
+                                            "default_value": false,
+                                            "return_format": "value",
+                                            "multiple": 0,
+                                            "allow_null": 0,
+                                            "allow_in_bindings": 0,
+                                            "ui": 1,
+                                            "ajax": 0,
+                                            "placeholder": "",
+                                            "create_options": 0,
+                                            "save_options": 0
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "layout_69f0b2a6f33e0": {
+                                    "key": "layout_69f0b2a6f33e0",
+                                    "name": "program_this_week_shortcode",
+                                    "label": "Program This Week Shortcode",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_69f0b2a6f33e4",
+                                            "label": "Title",
+                                            "name": "title",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "default_value": "All Categories",
+                                            "maxlength": "",
+                                            "allow_in_bindings": 0,
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_69f0b2a6f33e6",
+                                            "label": "Select Program From Amilia",
+                                            "name": "select_program_from_amilia",
+                                            "aria-label": "",
+                                            "type": "select",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "choices": {
+                                                "124904": "Adult Leisure and Lifestyle 2026 (Annual) (ID: 124904)",
+                                                "120179": "Adult Leisure and Lifestyle Winter 2026 (Reg starts 12\/6) (ID: 120179)",
+                                                "124905": "Adult Sports 2026 (Annual) (ID: 124905)",
+                                                "116198": "Adult Sports Winter 2026 (Reg starts 12\/6) (ID: 116198)",
+                                                "124906": "Aquatics 2026 (Annual) (ID: 124906)",
+                                                "116200": "Aquatics Winter 2026 (Reg starts 12\/6) (ID: 116200)",
+                                                "124907": "Arts and Crafts 2026 (Annual) (ID: 124907)",
+                                                "118892": "Birthday Parties 2026 (Ages 1-16 based on party restrictions) (ID: 118892)",
+                                                "125621": "Clubhouse Afterschool Childcare 2026-2027 (ID: 125621)",
+                                                "124908": "Conservatory\/Cheney Mansion\/Pleasant Home Events 2026 (Annual) (ID: 124908)",
+                                                "116204": "Conservatory\/Cheney Mansion\/Pleasant Home Events Winter 2026 (Reg starts 12\/6) (ID: 116204)",
+                                                "114796": "CRC All Day Visit (ID: 114796)",
+                                                "124909": "Early Childhood 2026 (Annual) (ID: 124909)",
+                                                "116206": "Early Childhood Winter 2026 (Reg starts 12\/6) (ID: 116206)",
+                                                "124916": "Esports 2026 (Annual) (ID: 124916)",
+                                                "119997": "Fitness Drop-In Activities 2026 (ID: 119997)",
+                                                "124910": "Gymnastics 2026 (Annual) (ID: 124910)",
+                                                "118806": "Gymnastics Advanced Classes 2025-2026 School Year (ID: 118806)",
+                                                "116208": "Gymnastics Winter 2026 (ID: 116208)",
+                                                "119320": "Ice Bears Fall 2025 (ID: 119320)",
+                                                "128268": "Ice Bears Spring 2026 (ID: 128268)",
+                                                "124911": "Ice Rink Programs 2026 (Annual) (ID: 124911)",
+                                                "116212": "Ice Rink Programs Winter 2026 (Reg starts 12\/6) (ID: 116212)",
+                                                "125278": "Ice Show 2026 and Freestyle Ice during shutdown (Must be registered for Winter 2026 Skate Academy) (ID: 125278)",
+                                                "116196": "Lifelong Learning (Formerly Active Adult) 2026 Annual (ID: 116196)",
+                                                "124913": "Nature & Adventure 2026 (Annual) (ID: 124913)",
+                                                "116190": "Nature & Adventure Winter 2026 (Reg starts 12\/6) (ID: 116190)",
+                                                "124914": "Performing Arts 2026 (Annual) (ID: 124914)",
+                                                "116210": "Performing Arts Winter 2026 (Reg starts 12\/6) (ID: 116210)",
+                                                "109188": "Preschool 2025-2026 (ID: 109188)",
+                                                "125622": "Preschool 2026-2027 (ID: 125622)",
+                                                "124915": "School's Out Programs - 2026 (Annual) (ID: 124915)",
+                                                "116194": "School's Out Programs - Winter 2026 (Reg starts 12\/6) (ID: 116194)",
+                                                "129631": "Special Interest 2026 (Annual) (ID: 129631)",
+                                                "116214": "Special Interest Winter 2026 (Reg starts 12\/6) (ID: 116214)",
+                                                "116192": "Spring Break Camps 2026 (ID: 116192)",
+                                                "124048": "Summer Camps 2026 (ID: 124048)",
+                                                "124917": "Teens 2026 (Annual) (ID: 124917)",
+                                                "116217": "Teens Winter 2026 (Reg starts 12\/6) (ID: 116217)",
+                                                "124918": "Youth Sports 2026 (Annual) (ID: 124918)",
+                                                "116219": "Youth Sports Winter 2026 (Reg starts 12\/6) (ID: 116219)"
+                                            },
+                                            "default_value": false,
+                                            "return_format": "value",
+                                            "multiple": 0,
+                                            "allow_null": 0,
+                                            "allow_in_bindings": 0,
+                                            "ui": 1,
+                                            "ajax": 0,
+                                            "placeholder": "",
+                                            "create_options": 0,
+                                            "save_options": 0
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "layout_69f08abb1c41e": {
+                                    "key": "layout_69f08abb1c41e",
+                                    "name": "program_cta_section",
+                                    "label": "Program CTA Section",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_69f08b001c424",
+                                            "label": "CTA Buttons",
+                                            "name": "cta_buttons",
+                                            "aria-label": "",
+                                            "type": "repeater",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "layout": "block",
+                                            "min": 0,
+                                            "max": 0,
+                                            "collapsed": "",
+                                            "button_label": "Add Row",
+                                            "rows_per_page": 20,
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_69f08b561c425",
+                                                    "label": "Select Behavior",
+                                                    "name": "select_behavior",
+                                                    "aria-label": "",
+                                                    "type": "button_group",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "choices": {
+                                                        "link": "Link",
+                                                        "modal": "Modal Popup"
+                                                    },
+                                                    "default_value": "link",
+                                                    "return_format": "value",
+                                                    "allow_null": 0,
+                                                    "allow_in_bindings": 0,
+                                                    "layout": "horizontal",
+                                                    "parent_repeater": "field_69f08b001c424"
+                                                },
+                                                {
+                                                    "key": "field_69f08b931c426",
+                                                    "label": "Add URL",
+                                                    "name": "add_url",
+                                                    "aria-label": "",
+                                                    "type": "link",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": [
+                                                        [
+                                                            {
+                                                                "field": "field_69f08b561c425",
+                                                                "operator": "==",
+                                                                "value": "link"
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "return_format": "array",
+                                                    "allow_in_bindings": 0,
+                                                    "parent_repeater": "field_69f08b001c424"
+                                                },
+                                                {
+                                                    "key": "field_69f08bcb1c427",
+                                                    "label": "CTA title",
+                                                    "name": "cta_title",
+                                                    "aria-label": "",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": [
+                                                        [
+                                                            {
+                                                                "field": "field_69f08b561c425",
+                                                                "operator": "==",
+                                                                "value": "modal"
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "default_value": "",
+                                                    "maxlength": "",
+                                                    "allow_in_bindings": 0,
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "parent_repeater": "field_69f08b001c424"
+                                                },
+                                                {
+                                                    "key": "field_69f08c531c428",
+                                                    "label": "Modal Heading",
+                                                    "name": "modal_heading",
+                                                    "aria-label": "",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": [
+                                                        [
+                                                            {
+                                                                "field": "field_69f08b561c425",
+                                                                "operator": "==",
+                                                                "value": "modal"
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "default_value": "",
+                                                    "maxlength": "",
+                                                    "allow_in_bindings": 0,
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "parent_repeater": "field_69f08b001c424"
+                                                },
+                                                {
+                                                    "key": "field_69f08c631c429",
+                                                    "label": "Modal Data",
+                                                    "name": "modal_data",
+                                                    "aria-label": "",
+                                                    "type": "repeater",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": [
+                                                        [
+                                                            {
+                                                                "field": "field_69f08b561c425",
+                                                                "operator": "==",
+                                                                "value": "modal"
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "layout": "table",
+                                                    "pagination": 0,
+                                                    "min": 0,
+                                                    "max": 0,
+                                                    "collapsed": "",
+                                                    "button_label": "Add Row",
+                                                    "rows_per_page": 20,
+                                                    "sub_fields": [
+                                                        {
+                                                            "key": "field_69f08c7e1c42a",
+                                                            "label": "Title",
+                                                            "name": "title",
+                                                            "aria-label": "",
+                                                            "type": "text",
+                                                            "instructions": "",
+                                                            "required": 0,
+                                                            "conditional_logic": 0,
+                                                            "wrapper": {
+                                                                "width": "",
+                                                                "class": "",
+                                                                "id": ""
+                                                            },
+                                                            "relevanssi_exclude": 0,
+                                                            "default_value": "",
+                                                            "maxlength": "",
+                                                            "allow_in_bindings": 0,
+                                                            "placeholder": "",
+                                                            "prepend": "",
+                                                            "append": "",
+                                                            "parent_repeater": "field_69f08c631c429"
+                                                        },
+                                                        {
+                                                            "key": "field_69f08c831c42b",
+                                                            "label": "Description",
+                                                            "name": "description",
+                                                            "aria-label": "",
+                                                            "type": "wysiwyg",
+                                                            "instructions": "",
+                                                            "required": 0,
+                                                            "conditional_logic": 0,
+                                                            "wrapper": {
+                                                                "width": "",
+                                                                "class": "",
+                                                                "id": ""
+                                                            },
+                                                            "relevanssi_exclude": 0,
+                                                            "default_value": "",
+                                                            "allow_in_bindings": 0,
+                                                            "tabs": "all",
+                                                            "toolbar": "full",
+                                                            "media_upload": 1,
+                                                            "delay": 0,
+                                                            "parent_repeater": "field_69f08c631c429"
+                                                        }
+                                                    ],
+                                                    "parent_repeater": "field_69f08b001c424"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "layout_69f0b4f8a109d": {
+                                    "key": "layout_69f0b4f8a109d",
+                                    "name": "program_location_section",
+                                    "label": "Program Location Section",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_69f0b507a109f",
+                                            "label": "Heading",
+                                            "name": "heading",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "allow_in_bindings": 0,
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_69f0b51aa10a0",
+                                            "label": "Locations",
+                                            "name": "locations",
+                                            "aria-label": "",
+                                            "type": "repeater",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "layout": "table",
+                                            "min": 0,
+                                            "max": 0,
+                                            "collapsed": "",
+                                            "button_label": "Add Row",
+                                            "rows_per_page": 20,
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_69f0b52ba10a2",
+                                                    "label": "Image",
+                                                    "name": "image",
+                                                    "aria-label": "",
+                                                    "type": "image",
+                                                    "instructions": "",
+                                                    "required": false,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "return_format": "array",
+                                                    "library": "all",
+                                                    "preview_size": "medium",
+                                                    "min_width": 0,
+                                                    "min_height": 0,
+                                                    "min_size": 0,
+                                                    "max_width": 0,
+                                                    "max_height": 0,
+                                                    "max_size": 0,
+                                                    "mime_types": "",
+                                                    "parent_repeater": "field_69f0b51aa10a0"
+                                                },
+                                                {
+                                                    "key": "field_69f0b524a10a1",
+                                                    "label": "Name",
+                                                    "name": "name",
+                                                    "aria-label": "",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "default_value": "",
+                                                    "maxlength": "",
+                                                    "allow_in_bindings": 0,
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "parent_repeater": "field_69f0b51aa10a0"
+                                                },
+                                                {
+                                                    "key": "field_69f0b534a10a3",
+                                                    "label": "Description",
+                                                    "name": "description",
+                                                    "aria-label": "",
+                                                    "type": "wysiwyg",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "default_value": "",
+                                                    "allow_in_bindings": 0,
+                                                    "tabs": "all",
+                                                    "toolbar": "full",
+                                                    "media_upload": 1,
+                                                    "delay": 0,
+                                                    "parent_repeater": "field_69f0b51aa10a0"
+                                                },
+                                                {
+                                                    "key": "field_69f0b556a10a4",
+                                                    "label": "Link",
+                                                    "name": "link",
+                                                    "aria-label": "",
+                                                    "type": "link",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "return_format": "array",
+                                                    "allow_in_bindings": 0,
+                                                    "parent_repeater": "field_69f0b51aa10a0"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "layout_69f103ec1ad8e": {
+                                    "key": "layout_69f103ec1ad8e",
+                                    "name": "program_instructors_section",
+                                    "label": "Program Instructors Section",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_69f103f81ad90",
+                                            "label": "Heading",
+                                            "name": "heading",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "allow_in_bindings": 0,
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_69f104051ad91",
+                                            "label": "Instructors Data",
+                                            "name": "instructors_data",
+                                            "aria-label": "",
+                                            "type": "repeater",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "relevanssi_exclude": 0,
+                                            "layout": "block",
+                                            "min": 0,
+                                            "max": 0,
+                                            "collapsed": "",
+                                            "button_label": "Add Row",
+                                            "rows_per_page": 20,
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_69f104231ad92",
+                                                    "label": "Profile Image",
+                                                    "name": "profile_image",
+                                                    "aria-label": "",
+                                                    "type": "image",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "return_format": "array",
+                                                    "library": "all",
+                                                    "min_width": "",
+                                                    "min_height": "",
+                                                    "min_size": "",
+                                                    "max_width": "",
+                                                    "max_height": "",
+                                                    "max_size": "",
+                                                    "mime_types": "",
+                                                    "allow_in_bindings": 0,
+                                                    "preview_size": "medium",
+                                                    "parent_repeater": "field_69f104051ad91"
+                                                },
+                                                {
+                                                    "key": "field_69f1043c1ad93",
+                                                    "label": "Name",
+                                                    "name": "name",
+                                                    "aria-label": "",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "default_value": "",
+                                                    "maxlength": "",
+                                                    "allow_in_bindings": 0,
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "parent_repeater": "field_69f104051ad91"
+                                                },
+                                                {
+                                                    "key": "field_69f104431ad94",
+                                                    "label": "Description",
+                                                    "name": "description",
+                                                    "aria-label": "",
+                                                    "type": "wysiwyg",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "default_value": "",
+                                                    "allow_in_bindings": 0,
+                                                    "tabs": "all",
+                                                    "toolbar": "full",
+                                                    "media_upload": 1,
+                                                    "delay": 0,
+                                                    "parent_repeater": "field_69f104051ad91"
+                                                },
+                                                {
+                                                    "key": "field_69f104ff1ad95",
+                                                    "label": "Classes Tags",
+                                                    "name": "classes_tags",
+                                                    "aria-label": "",
+                                                    "type": "repeater",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "relevanssi_exclude": 0,
+                                                    "layout": "table",
+                                                    "pagination": 0,
+                                                    "min": 0,
+                                                    "max": 0,
+                                                    "collapsed": "",
+                                                    "button_label": "Add Row",
+                                                    "rows_per_page": 20,
+                                                    "sub_fields": [
+                                                        {
+                                                            "key": "field_69f1050b1ad96",
+                                                            "label": "Tag",
+                                                            "name": "tag",
+                                                            "aria-label": "",
+                                                            "type": "text",
+                                                            "instructions": "",
+                                                            "required": 0,
+                                                            "conditional_logic": 0,
+                                                            "wrapper": {
+                                                                "width": "",
+                                                                "class": "",
+                                                                "id": ""
+                                                            },
+                                                            "relevanssi_exclude": 0,
+                                                            "default_value": "",
+                                                            "maxlength": "",
+                                                            "allow_in_bindings": 0,
+                                                            "placeholder": "",
+                                                            "prepend": "",
+                                                            "append": "",
+                                                            "parent_repeater": "field_69f104ff1ad95"
+                                                        }
+                                                    ],
+                                                    "parent_repeater": "field_69f104051ad91"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                }
+                            },
+                            "min": "",
+                            "max": "",
+                            "button_label": "Add Row"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Row"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "templates\/program.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1777403166
+}
