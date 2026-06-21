@@ -8,7 +8,7 @@
  * @package PDOP
  */
 
-if (! defined('_PDOP_VERSION')) {
+if (!defined('_PDOP_VERSION')) {
 	// Replace the version number of the theme on each release.
 	define('_PDOP_VERSION', '1.0.0');
 }
@@ -20,31 +20,32 @@ if (! defined('_PDOP_VERSION')) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function pdop_setup(){
+function pdop_setup()
+{
 	/*
-		* Make theme available for translation.
-		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on PDOP, use a find and replace
-		* to change 'pdop' to the name of your theme in all the template files.
-		*/
+	 * Make theme available for translation.
+	 * Translations can be filed in the /languages/ directory.
+	 * If you're building a theme based on PDOP, use a find and replace
+	 * to change 'pdop' to the name of your theme in all the template files.
+	 */
 	load_theme_textdomain('pdop', get_template_directory() . '/languages');
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support('automatic-feed-links');
 
 	/*
-		* Let WordPress manage the document title.
-		* By adding theme support, we declare that this theme does not use a
-		* hard-coded <title> tag in the document head, and expect WordPress to
-		* provide it for us.
-		*/
+	 * Let WordPress manage the document title.
+	 * By adding theme support, we declare that this theme does not use a
+	 * hard-coded <title> tag in the document head, and expect WordPress to
+	 * provide it for us.
+	 */
 	add_theme_support('title-tag');
 
 	/*
-		* Enable support for Post Thumbnails on posts and pages.
-		*
-		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-		*/
+	 * Enable support for Post Thumbnails on posts and pages.
+	 *
+	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+	 */
 	add_theme_support('post-thumbnails');
 
 	// This theme uses wp_nav_menu() in one location.
@@ -58,9 +59,9 @@ function pdop_setup(){
 	);
 
 	/*
-		* Switch default core markup for search form, comment form, and comments
-		* to output valid HTML5.
-		*/
+	 * Switch default core markup for search form, comment form, and comments
+	 * to output valid HTML5.
+	 */
 	add_theme_support(
 		'html5',
 		array(
@@ -97,9 +98,9 @@ function pdop_setup(){
 	add_theme_support(
 		'custom-logo',
 		array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
+			'height' => 250,
+			'width' => 250,
+			'flex-width' => true,
 			'flex-height' => true,
 		)
 	);
@@ -117,12 +118,13 @@ function pdop_setup(){
 }
 add_action('after_setup_theme', 'pdop_setup');
 
-function pdop_mobile_logo_customize($wp_customize){
+function pdop_mobile_logo_customize($wp_customize)
+{
 
 	$wp_customize->add_setting(
 		'mobile_logo',
 		array(
-			'sanitize_callback'=>'absint'
+			'sanitize_callback' => 'absint'
 		)
 	);
 
@@ -131,24 +133,25 @@ function pdop_mobile_logo_customize($wp_customize){
 			$wp_customize,
 			'mobile_logo',
 			array(
-				'label'=>'Mobile Logo',
-				'section'=>'title_tagline',
-				'mime_type'=>'image',
+				'label' => 'Mobile Logo',
+				'section' => 'title_tagline',
+				'mime_type' => 'image',
 			)
 		)
 	);
 
 }
-add_action('customize_register','pdop_mobile_logo_customize');
+add_action('customize_register', 'pdop_mobile_logo_customize');
 
-function pdop_mobile_logo(){
+function pdop_mobile_logo()
+{
 	$mobile_logo = get_theme_mod('mobile_logo');
 
-	if($mobile_logo){
-		echo '<a href="'.esc_url(home_url('/')).'" class="mobile-logo">';
-		echo wp_get_attachment_image($mobile_logo,'full');
+	if ($mobile_logo) {
+		echo '<a href="' . esc_url(home_url('/')) . '" class="mobile-logo">';
+		echo wp_get_attachment_image($mobile_logo, 'full');
 		echo '</a>';
-	}else{
+	} else {
 		the_custom_logo();
 	}
 }
@@ -199,13 +202,13 @@ function pdop_widgets_init()
 {
 	register_sidebar(
 		array(
-			'name'          => esc_html__('Sidebar', 'pdop'),
-			'id'            => 'sidebar-1',
-			'description'   => esc_html__('Add widgets here.', 'pdop'),
+			'name' => esc_html__('Sidebar', 'pdop'),
+			'id' => 'sidebar-1',
+			'description' => esc_html__('Add widgets here.', 'pdop'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'after_widget' => '</section>',
+			'before_title' => '<h2 class="widget-title">',
+			'after_title' => '</h2>',
 		)
 	);
 }
@@ -279,13 +282,15 @@ add_filter('use_block_editor_for_post', '__return_false');
 add_filter('use_block_editor_for_post_type', '__return_false');
 
 //Hide the acf for all the child items in Admin menu
-add_action( 'admin_enqueue_scripts', function( $hook ) {
-    if ( 'nav-menus.php' !== $hook ) {
-        return;
-    }
+add_action('admin_enqueue_scripts', function ($hook) {
+	if ('nav-menus.php' !== $hook) {
+		return;
+	}
 
-    wp_add_inline_style(
-        'nav-menus', // hooks onto WP's own nav-menus stylesheet
-        '#menu-to-edit li.menu-item:not(.menu-item-depth-0) .acf-menu-item-fields { display: none !important; }'
-    );
-} );
+	wp_add_inline_style(
+		'nav-menus', // hooks onto WP's own nav-menus stylesheet
+		'#menu-to-edit li.menu-item:not(.menu-item-depth-0) .acf-menu-item-fields { display: none !important; }'
+	);
+});
+
+// Git Test
