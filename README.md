@@ -69,4 +69,8 @@ Good luck!
 
 ## Git Workflow Test
 
+<<<<<<< HEAD
 ## Conflict Test A
+=======
+## Conflict Test B
+>>>>>>> feature/conflict-b
